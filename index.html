@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YudhiStore • Top Up Game (FF & ML)</title>
+  <meta name="description" content="Top up diamond Free Fire & Mobile Legends cepat dan aman. Pembayaran via WhatsApp: 62882005184293" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#ffb86b; --muted:#98a8c7; --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.03);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071028 0%, #071b2a 60%);color:#e6eef8}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#ff7a59,#ffb86b);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.45);transform:rotate(-8deg);}
+    .logo strong{font-size:18px;color:#081021}
+    h1{margin:0;font-size:20px;letter-spacing:0.4px}
+    p.lead{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:24px;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(3,6,14,0.6);border:1px solid var(--glass-2)}
+    .intro h2{margin:0 0 6px;font-size:22px}
+    .intro p{margin:0;color:var(--muted)}
+
+    /* Animated badges */
+    .badges{display:flex;gap:10px;margin-top:12px}
+    .badge{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));font-weight:600;font-size:13px}
+
+    /* Product grid */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+    .product{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);transition:transform .28s ease, box-shadow .28s ease;border:1px solid var(--glass)}
+    .product:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.55)}
+    .product .icon{width:64px;height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .ff{background:linear-gradient(135deg,#ff5a7a,#ffb86b);color:#071021}
+    .ml{background:linear-gradient(135deg,#7ad1ff,#4b6eff);color:#071021}
+    .prod-info h3{margin:0;font-size:16px}
+    .prod-info p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border-radius:10px;background:var(--accent);color:#081021;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+
+    /* Right column */
+    .right .contact{display:flex;flex-direction:column;gap:10px}
+    .contact .box{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid var(--glass)}
+
+    /* Animated contact (alamat + email) */
+    .marquee{overflow:hidden;white-space:nowrap}
+    .marquee p{display:inline-block;padding-left:100%;animation:slide 12s linear infinite;color:var(--muted)}
+    @keyframes slide{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+
+    /* Footer */
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.container{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><strong>YD</strong></div>
+        <div>
+          <h1>YudhiStore</h1>
+          <p class="lead">Top up diamond Free Fire & Mobile Legends — cepat, aman, dan mudah via WhatsApp</p>
+        </div>
+      </div>
+      <div class="badges">
+        <div class="badge">Pembayaran: WhatsApp</div>
+        <div class="badge">WA: +62 882-0051-84293</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Isi diamond & top up cepat</h2>
+        <p>Pilih paket, isi ID game, dan langsung bayar lewat WhatsApp. Layanan 24/7 (respon manual).</p>
+
+        <div class="grid">
+          <div class="product">
+            <div class="icon ff">FF</div>
+            <div class="prod-info">
+              <h3>Free Fire — Paket Diamond</h3>
+              <p>Paket populer: 50, 140, 355, 720 diamond — harga kompetitif.</p>
+            </div>
+            <div style="margin-left:auto">
+              <a class="btn" href="#" onclick="order('Free Fire','50','FF')">Order</a>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="icon ml">ML</div>
+            <div class="prod-info">
+              <h3>Mobile Legends — Top Up Diamond</h3>
+              <p>Pilih dari paket kecil sampai besar — langsung proses via WA.</p>
+            </div>
+            <div style="margin-left:auto">
+              <a class="btn" href="#" onclick="order('Mobile Legends','50','ML')">Order</a>
+            </div>
+          </div>
+
+          <!-- additional example packages -->
+          <div class="product">
+            <div class="icon ff">🔥</div>
+            <div class="prod-info">
+              <h3>Paket 140 Diamond (FF)</h3>
+              <p>Estimasi: cepat — masukkan ID dan server.</p>
+            </div>
+            <div style="margin-left:auto"><a class="btn" href="#" onclick="order('Free Fire','140','FF')">Order</a></div>
+          </div>
+
+          <div class="product">
+            <div class="icon ml">✨</div>
+            <div class="prod-info">
+              <h3>Paket 300 Diamond (ML)</h3>
+              <p>Cocok untuk hadiah dan skin.</p>
+            </div>
+            <div style="margin-left:auto"><a class="btn" href="#" onclick="order('Mobile Legends','300','ML')">Order</a></div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;color:var(--muted);font-size:13px">Catatan: Setelah klik Order, Anda akan diarahkan ke WhatsApp dengan pesan terisi. Pastikan ID dan nama benar.</div>
+      </div>
+
+      <aside class="card right">
+        <div class="contact">
+          <div class="box">
+            <div>
+              <div style="font-size:13px;color:var(--muted)">Hubungi via WhatsApp</div>
+              <div style="font-weight:700">+62 882-0051-84293</div>
+            </div>
+          </div>
+
+          <div class="box marquee">
+            <p>Alamat: Jl. Contoh No. 12, Kota — Layanan online. &nbsp; Email: aryaaksa982@gmail.com &nbsp; Pembayaran: WhatsApp saja.</p>
+          </div>
+
+          <div class="box">
+            <div style="flex:1">
+              <div style="font-size:13px;color:var(--muted)">Email</div>
+              <div style="font-weight:700">aryaaksa982@gmail.com</div>
+            </div>
+            <div>
+              <a class="btn" href="mailto:aryaaksa982@gmail.com">Kirim Email</a>
+            </div>
+          </div>
+
+          <div class="box" style="justify-content:space-between;align-items:center">
+            <div style="font-size:13px;color:var(--muted)">Mode Pembayaran</div>
+            <div style="font-weight:700">WhatsApp</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;text-align:center">
+          <button class="btn" onclick="openWA()">Chat Sekarang via WA</button>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> YudhiStore — Semua hak dilindungi.
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // WA number (user provided)
+    const WA_NUMBER = '62882005184293';
+
+    function openWA(){
+      const text = encodeURIComponent('Halo YudhiStore, saya ingin order top up. Mohon info paket dan cara pembayaran. Terima kasih.');
+      const href = `https://wa.me/${WA_NUMBER}?text=${text}`;
+      window.open(href, '_blank');
+    }
+
+    function order(game, amount, short){
+      const id = prompt('Masukkan ID Game (contoh: 123456789)');
+      if(!id) return;
+      const server = prompt('Masukkan server (jika ada) — kosongkan jika tidak tahu');
+      const msg = `Halo%20YudhiStore%20(ORDER)%0AGame:%20${encodeURIComponent(game)}%0APaket:%20${encodeURIComponent(amount)}%20diamond%0AID:%20${encodeURIComponent(id)}%0AServer:%20${encodeURIComponent(server||'-')}%0Amohon%20konfirmasi%20harga%20dan%20metode%20pembayaran.`;
+      const href = `https://wa.me/${WA_NUMBER}?text=${msg}`;
+      window.open(href,'_blank');
+    }
+  </script>
+</body>
+</html>
